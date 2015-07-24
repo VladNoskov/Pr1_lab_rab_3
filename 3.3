@@ -1,0 +1,36 @@
+# Pr1_lab_rab_3
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>	 		
+	$(document).ready(function () {
+		$("button").click(function () {
+		var i=1;
+		do{
+		$(".p2").fadeToggle(3000);
+		i++;
+		if(i%2==0){
+			$(".p1").fadeToggle(3000);}
+		}
+		while(i<2000)
+		$(".p1").hide();
+		});
+});
+</script>
+</head>
+<body>
+<p class="p1"style="display:none">1</p>
+<p class="p2" style="display:none">2</p>
+<p class="p1"style="display:none">3</p>
+<p class="p2" style="display:none">4</p>
+<p class="p1"style="display:none">5</p>
+<p class="p2" style="display:none">6</p>
+<p class="p1"style="display:none">7</p>
+<p class="p2" style="display:none">8</p>
+<p class="p1"style="display:none">9</p>
+<p class="p2" style="display:none">10</p>
+</body>
+<br>
+<button>Показать</button>
+</html>
