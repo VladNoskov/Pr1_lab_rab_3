@@ -1,0 +1,31 @@
+# Pr1_lab_rab_3
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js">
+</script>
+<script>
+$(document).ready(function () 
+{
+$("#but1").click(function () 
+{
+$("#div1").fadeIn("slow");
+$("#div2").fadeOut("hide");
+});
+$("#but2").click(function () 
+{
+$("#div1").fadeIn("slow");
+$("#div2").fadeIn("slow");
+
+});
+});
+</script>
+</head>
+<body>
+<button id="but1">ֽאזלט</button>
+<button id="but2">ֶלט</button>
+<br><br>
+<div id="div1" style="width:100px;height:60px;display:none;background-color:black;"></div>
+<div id="div2" style="width:100px;height:60px;display:none;background-color:yellow;"></div>
+</body>
+</html>
