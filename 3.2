@@ -1,0 +1,42 @@
+# Pr1_lab_rab_3
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script> 		
+	$(document).ready(function () {
+		$("#btn1").click(function () {
+			var a=Math.floor(Math.random() * (6 - 1)) + 1;			
+			if(a==1){
+			$("#div1").fadeIn(2000);}
+			else if(a==2){
+			$("#div2").fadeIn(2000);}
+			else if(a==3){
+			$("#div3").fadeIn(2000);}
+			else if(a==4){
+			$("#div4").fadeIn(2000);}
+			else if(a==5) {
+			$("#div5").fadeIn(2000);}
+		});
+		$("#btn2").click(function () {
+			$("#div1").fadeOut();
+			$("#div2").fadeOut();
+			$("#div3").fadeOut();
+			$("#div4").fadeOut();
+			$("#div5").fadeOut();
+		});
+	});
+</script>
+</head>
+<body>
+<div id="div1" style="width:100px;height:20px;display:none;">1</div>
+<div id="div2" style="width:100px;height:20px;display:none;">2</div>
+<div id="div3" style="width:100px;height:20px;display:none;">3</div>
+<div id="div4" style="width:100px;height:20px;display:none;">4</div>
+<div id="div5" style="width:100px;height:20px;display:none;">5</div>
+<br>
+</body>
+<button id="btn1">ֶלט</button>
+<button id="btn2">ֽאזלט</button>
+</body>
+</html>
