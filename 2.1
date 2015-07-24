@@ -1,0 +1,28 @@
+# Pr1_lab_rab_3
+<!DOCTYPE html> 
+<html> 
+<head> 
+<script src="http://code.jquery.com/jquery-latest.js"> 
+</script>  
+<script>
+      $(document).ready(function () {
+         $("[align*='center']").dblclick(function () {
+		 $(this).hide();
+	});
+         $("button").dblclick(function () {
+		$("[align*='center']").show();
+	});
+	
+     });
+
+</script> 
+</head> 
+<body> 
+<p align="center">Управляй.</p>
+<p align="left">Нельзя.</p>
+<p align="center">Тоже управляй.</p>
+<p align="right">Нельзя.</p>
+<br>
+<button id="btn2">Показать</button>
+</body> 
+</html> 
